@@ -52,7 +52,7 @@ In your site directory (which you should rename if it doesn't match your GitHub 
 
 - `git init` to make the directory into a git repository.
 - `git add .` To tell git you care about all the files in the current directory.
-- `git commit -am 'OMG my first blog post'` (with a meaningful commit message) to "commit" your changes.
+- `git commit -m 'OMG my first blog post'` (with a meaningful commit message) to "commit" your changes.
 - `git remote add origin git@github.com:urcheraus/urcheraus.git` (with your repository URL) to tell git that you want to be able to send (and receive) commits to GitHub.
 - `git push -u origin master` to send your commit to GitHub.
 
@@ -62,7 +62,7 @@ That's it. Your site is now available at https://reponame.github.io/
 
 ## Blog more
 
-To make another blog post create a file in `_posts/` named YYYY-MM-DD-this-is-the-post-url.markdown (with the current date and the name of your post). Commit with `git commit -am 'YAFP (Yet Another Fine Post)'`. Send it to GitHub with `git push master`.
+To make another blog post create a file in `_posts/` named YYYY-MM-DD-this-is-the-post-url.markdown (with the current date and the name of your post). Add your post with `git add .`. Commit with `git commit -m 'YAFP (Yet Another Fine Post)'`. Send it to GitHub with `git push master`.
 
 ## Next steps
 
