@@ -36,7 +36,7 @@ Run `bundle exec jekyll serve` to start Jekyll. While this is running you can vi
 
 The generated site includes instructions on which files provide which content, but you should start with:
 
-- **`_config.yml`** - To set the title, description, and social links.
+- **`_config.yml`** - To set the title, description, and social links. Set `baseurl` to `yourreponame/` otherwise your site won't load properly on GitHub.
 - **`about.md`** - To write the about page.
 - **The markdown file in `_posts/`** - This will be your first blog post.
 
@@ -58,7 +58,9 @@ In your site directory (which you should rename if it doesn't match your GitHub 
 
 On github.com go to your repositories settings page and set the GitHub pages source to your master branch.
 
-That's it. Your site is now available at https://reponame.github.io/
+That's it. Your site is now available at https://reponame.github.io/reponame/
+
+If the text of your site loads but the style is broken and none of the links work then you probably forgot to set the `basename` to `reponame/` in `_config.yml`.
 
 ## Blog more
 
